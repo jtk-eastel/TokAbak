@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eastel X Tok ABAK | Calculator Laluan Rank</title>
+  <meta name="description" content="Simulasi interaktif untuk faham laluan Elite Member, Ambassador dan Senior Ambassador berdasarkan komisen reload.">
+  <meta property="og:title" content="Eastel X Tok ABAK | Calculator Laluan Rank">
+  <meta property="og:description" content="Simulasi interaktif untuk faham laluan Elite Member, Ambassador dan Senior Ambassador berdasarkan komisen reload.">
+  <meta property="og:image" content="https://jtk-eastel.github.io/TokAbak/assets/og-eastel-tok-abak.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../assets/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"><span class="orb orb-a"></span><span class="orb orb-b"></span></div>
+  <header class="site-header">
+  <div class="container nav-shell">
+    <a class="brand" href="../"><img src="../assets/logo-eastel-x-tokabak-white.png" alt="Eastel X Tok ABAK"></a>
+    <nav class="nav-links" aria-label="Navigasi utama"><a class="nav-link " href="../">Home</a>
+<a class="nav-link " href="../eastel/">Eastel</a>
+<a class="nav-link active" href="../calculator/">Calculator</a>
+<a class="nav-link " href="../esk/">ESK</a>
+<a class="nav-link " href="../pelan-pemasaran/">Pelan</a>
+<a class="nav-link " href="../faq/">FAQ</a></nav>
+    <a class="btn btn-primary nav-cta" href="https://api.whatsapp.com/send/?phone=601175947174&text=NakTahuCaraMula&type=phone_number&app_absent=0" target="_blank" rel="noopener"><img src="../assets/whatsapp-logo-white.svg" alt="">Nak Tahu Cara Mula</a>
+    <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false" data-menu-toggle><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-panel" data-mobile-menu>
+    <div class="mobile-panel-inner">
+      <a class="mobile-link " href="../">Home</a>
+<a class="mobile-link " href="../eastel/">Eastel</a>
+<a class="mobile-link active" href="../calculator/">Calculator</a>
+<a class="mobile-link " href="../esk/">ESK</a>
+<a class="mobile-link " href="../pelan-pemasaran/">Pelan</a>
+<a class="mobile-link " href="../faq/">FAQ</a>
+      <a class="btn btn-primary full" href="https://api.whatsapp.com/send/?phone=601175947174&text=NakTahuCaraMula&type=phone_number&app_absent=0" target="_blank" rel="noopener"><img src="../assets/whatsapp-logo-white.svg" alt="">Nak Tahu Cara Mula</a>
+    </div>
+  </div>
+</header>
+  <main>
+<section class="hero section-dark cyber-bg calculator-hero">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Rank Unlock Simulator</span>
+      <h1>Kira Laluan Rank Korang.</h1>
+      <p class="lead">Mula dengan Elite Member dahulu. Bila simulasi capai milestone komisen reload, level seterusnya akan terbuka secara automatik.</p>
+      <p class="mini-disclaimer">Ini simulasi untuk kefahaman struktur, bukan pengesahan rank dan bukan jaminan pendapatan.</p>
+    </div>
+    <div class="dashboard-card reveal calc-preview-card">
+      <div class="unlock-preview-line"><span class="preview-dot"></span><b>Journey Flow</b></div>
+      <div class="preview-ranks" aria-label="Laluan rank calculator">
+        <span class="preview-rank active">Elite</span>
+        <span class="preview-arrow">→</span>
+        <span class="preview-rank">Ambassador</span>
+        <span class="preview-arrow">→</span>
+        <span class="preview-rank">Senior</span>
+      </div>
+      <p>Masukkan pengguna aktif. Bila milestone tercapai, panel locked akan bertukar unlocked.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-income-calculator>
+  <div class="container unlock-dashboard">
+    <aside class="dashboard-card rank-setup reveal">
+      <span class="eyebrow">Setup</span>
+      <h2>Mulakan Dari Asas</h2>
+      <p>Prospect tak perlu faham semua level sekali gus. Isi pengguna aktif L1-L3 dahulu, kemudian lihat rank mana yang terbuka.</p>
+
+      <div class="form-group">
+        <label for="reload">Reload purata pengguna</label>
+        <select id="reload" data-reload>
+          <option value="35">RM35</option>
+          <option value="50">RM50</option>
+          <option value="custom">Custom</option>
+        </select>
+      </div>
+      <div class="form-group" data-custom-wrap hidden>
+        <label for="customReload">Nilai custom</label>
+        <input id="customReload" type="number" min="1" value="35" data-custom-reload>
+      </div>
+
+      <label class="field-label">Preset simulasi</label>
+      <div class="preset-tabs unlock-presets">
+        <button type="button" data-preset="5">Sifir 5</button>
+        <button type="button" class="active" data-preset="10">Sifir 10</button>
+        <button type="button" data-preset="manual">Manual</button>
+      </div>
+
+      <div class="unlock-help-card">
+        <span class="help-icon" aria-hidden="true">↗</span>
+        <div>
+          <strong>Cara baca calculator</strong>
+          <p>Elite dikira dahulu. Ambassador terbuka bila komisen reload simulasi capai RM500. Senior Ambassador terbuka bila capai RM3,500.</p>
+        </div>
+      </div>
+    </aside>
+
+    <aside class="dashboard-card unlock-result result-panel reveal" aria-live="polite">
+      <span class="eyebrow">Live Result</span>
+      <div class="rank-status" data-rank-status>
+        <span class="rank-status-icon" data-status-icon aria-hidden="true"></span>
+        <div>
+          <small>Status simulasi</small>
+          <strong data-status-title>Elite Member</strong>
+        </div>
+      </div>
+
+      <div class="result-tile primary-result">
+        <span>Komisen Simulasi Semasa</span>
+        <div class="result-number" data-result-commission>RM2,950.50</div>
+      </div>
+      <div class="result-mini-grid">
+        <div class="result-tile compact"><span>Total Users</span><div class="result-number small" data-result-users>1,110</div></div>
+        <div class="result-tile compact"><span>Total Reload</span><div class="result-number small" data-result-reload>RM38,850</div></div>
+      </div>
+
+      <div class="milestone-card" data-ambassador-progress>
+        <div class="milestone-head"><span>Ambassador</span><b data-ambassador-text>100% ke RM500</b></div>
+        <div class="progress-bar"><span data-ambassador-bar style="width:100%"></span></div>
+      </div>
+      <div class="milestone-card" data-senior-progress>
+        <div class="milestone-head"><span>Senior Ambassador</span><b data-senior-text>84% ke RM3,500</b></div>
+        <div class="progress-bar"><span data-senior-bar style="width:84%"></span></div>
+      </div>
+
+      <div class="breakdown" data-breakdown></div>
+      <p class="disclaimer">Ini simulasi untuk bantu faham struktur. Bukan pengesahan rank dan bukan jaminan pendapatan.</p>
+      <a class="btn btn-primary full" href="https://api.whatsapp.com/send/?phone=601175947174&text=NakTahuCaraMula&type=phone_number&app_absent=0" target="_blank" rel="noopener"><img src="../assets/whatsapp-logo-white.svg" alt="">Nak Tahu Cara Mula</a>
+    </aside>
+
+    <section class="dashboard-card unlock-journey reveal">
+      <span class="eyebrow">Rank Journey</span>
+      <h2>Unlock ikut milestone</h2>
+      <p>Level tambahan hanya muncul bila simulasi dah capai milestone. Ini bantu audience faham laluan sebenar tanpa pening tengok L1 sampai L13 serentak.</p>
+      <div class="rank-unlock-stack" data-unlock-journey></div>
+    </section>
+  </div>
+</section>
+</main>
+  <footer class="site-footer section-dark">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <img src="../assets/logo-eastel-x-tokabak-white.png" alt="Eastel X Tok ABAK">
+      <p>Prepaid harian. Data besar. Sistem app. Peluang bina jaringan pengguna dengan lebih tersusun.</p>
+    </div>
+    <div class="footer-links">
+      <strong>Quick Links</strong>
+      <div><a href="../">Home</a>
+<a href="../eastel/">Eastel</a>
+<a href="../calculator/">Calculator</a>
+<a href="../esk/">ESK</a>
+<a href="../pelan-pemasaran/">Pelan</a>
+<a href="../faq/">FAQ</a>
+<a href="https://api.whatsapp.com/send/?phone=601175947174&text=NakTahuCaraMula&type=phone_number&app_absent=0" target="_blank" rel="noopener">Nak Tahu Cara Mula</a></div>
+    </div>
+    <div class="footer-note">
+      <strong>Nota Penting</strong>
+      <p>Paparan ini ialah bahan penerangan dan simulasi. Hasil sebenar bergantung kepada aktiviti, reload pengguna, struktur jaringan serta terma dan syarat semasa Eastel.</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Eastel X Tok ABAK. All rights reserved.</span>
+    <span>Sebahagian maklumat diolah semula daripada bahan Eastel Pelan Pemasaran / Anchor Communications Sdn. Bhd.</span>
+  </div>
+</footer>
+<a class="floating-wa" href="https://api.whatsapp.com/send/?phone=601175947174&text=NakTahuCaraMula&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="Nak Tahu Cara Mula"><img src="../assets/whatsapp-logo-white.svg" alt=""><span>Nak Tahu Cara Mula</span></a>
+  <script src="../script.js"></script>
+</body>
+</html>
